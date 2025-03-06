@@ -1,20 +1,20 @@
-#My Art Gallery. Hy!
+# My Art Gallery. Hy!
 This simple website is a personal art portfolio website that showcases my digital artwork and offers commission fill-in forms for interested clients. Built with HTML, CSS, JavaScript, and Node.js, this platform provides an interactive experience for art enjoyers and potential customers.
 
-##Pages
+## Pages
 Home (index.html): Landing page featuring a paperdoll and multiple navigation links.
 TOS (Terms Of Service): Comprehensive list of important information potential customers should be aware of.
 Art Gallery: Collection of digital artwork categorized by years.
 Commission System: Request custom artwork through a detailed commission form.
 About Me: Paperdoll alongside some simple information about me and links to my social medias.
 
-##Other Features
+## Other Features
 User Accounts: Account for admin to track commission requests.
 Responsive Design: Fully responsive interface that works on desktop and mobile devices.
 Easteregg: Pressing the word mess in the Home Screen returns a fun page, that has a simple size and color interactive drawing.
 
 
-##Technical Implementation
+## Technical Implementation
 Frontend
 
 HTML5: Semantic markup with proper structure (HEAD, BODY with HEADER, MAIN, FOOTER sections)
@@ -39,7 +39,7 @@ Data Management: AJAX requests to load artwork data from JSON files
 Form Processing: Handle commission requests and inquiries
 Error Handling: Custom 404 page for invalid routes
 
-##Installation and Setup
+## Installation and Setup
 
 Clone the repository:
 Copygit clone https://github.com/imnofuxkingfun/MyArt_Website.git
