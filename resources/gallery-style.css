@@ -1,0 +1,86 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(197, 165, 132);
+}
+
+#title {
+    font-family: monospace;
+    text-align: center;
+    color: rgb(105, 56, 73);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.container {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(33vh - 20px); /* Equal height, accounting for margin */
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.subtitle {
+    color: rgb(127, 75, 93);
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: calc(100% - 40px); /* Height minus subtitle space */
+    max-width: 100vw;
+    overflow-x: auto;
+}
+
+.gallery img {
+    height: 100%; /* All images same height within gallery */
+    width: auto;
+    object-fit: contain;
+    max-height: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid rgb(180, 133, 23);
+    border-radius: 5px;
+    color: rgb(167, 102, 41);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(192, 68, 126);
+    color: white;
+}
+
+/* Simplified media queries - only adjust container height if needed */
+@media (max-width: 50em) {
+    .container {
+        height: calc(30vh - 20px);
+    }
+}
+
+@media (min-width: 80em) {
+    .gallery {
+        gap: 20px;
+    }
+}

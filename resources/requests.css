@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(66, 39, 124);
+    color:rgb(219, 196, 241);
+    font-family: monospace;
+    padding: 20px;
+}
+
+#commRequest{
+    font-size: 150%;
+}
+button{
+    text-decoration: none;
+    margin: 10 px;
+    padding: 10px 20px;
+    border: 2px solid rgb(168, 143, 211);
+    border-radius: 5px;
+    color: rgb(118, 25, 144);
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: rgb(40, 13, 72);
+    color: white;
+    
+}

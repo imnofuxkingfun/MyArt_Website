@@ -1,0 +1,124 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(67, 47, 62);
+
+}
+
+.squares{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: -1;
+    
+    --s-fraction: 0.1;
+    --m: 0;
+    --s: calc(var(--s-fraction) * 100vw);/*calc dupa fractie ca sa impart egal*/
+    --f: var(--s);
+    font-size: 0;
+}
+
+.squares div{
+    
+    width: var(--s);
+    height: var(--f);
+    background-color: rgb(136, 76, 106);
+    display: inline-block;
+    
+}
+
+.squares div:nth-child(odd)
+{
+    background-color: rgb(109, 45, 77);
+}
+
+.squares div:nth-child(20n + 1),
+.squares div:nth-child(20n + 3),
+.squares div:nth-child(20n + 5),
+.squares div:nth-child(20n + 7),
+.squares div:nth-child(20n + 9)
+ {
+    background-color: rgb(124, 81, 111);
+}
+.squares div:nth-child(20n + 2),
+.squares div:nth-child(20n + 4),
+.squares div:nth-child(20n + 6),
+.squares div:nth-child(20n + 8),
+.squares div:nth-child(20n + 10)
+{
+    background-color: rgb(91, 45, 91);
+}
+
+#title{
+    text-align: center;
+    color:rgb(241, 184, 203);
+    padding-top: 15px;
+    padding-bottom: 15px;;
+    font-size: 30px;
+    background-color:  rgb(47, 27, 43);
+    border-radius: 20px;
+    margin:30px 30% 15px;
+    
+}
+
+
+.container{
+    background-color: rgb(47, 27, 43);
+    color:rgb(241, 184, 203);
+    text-align: left;
+    margin:10px 20%;
+    padding:10px;
+    border-radius:20px;
+
+    display: grid;
+    grid-template-columns: 2em auto;
+    grid-area: "dot" none;
+}
+
+.dot{
+    color:rgb(244, 222, 168);
+}
+
+h3{
+    font-size: 20px;
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    border: 2px solid rgb(192, 68, 126);
+    border-radius: 5px;
+    color: rgb(241, 184, 203);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(192, 68, 126);
+    color: white;
+}
+
+footer{
+    text-align: center;
+    margin-top: 3em;
+}
+
+
+@media(min-width:20em)
+{
+    h3{
+        font-size: 12px;
+    }
+    
+}
+
+@media(min-width:80em){
+    h3{
+        font-size: 20px;
+    }
+}

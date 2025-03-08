@@ -1,0 +1,35 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* To prevent horizontal scroll */
+    background-color: rgb(67, 47, 62);
+}
+
+h3{
+    color: rgb(241, 184, 203);
+    font-size: 150%;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 25px;
+    
+}
+
+input{
+    background-color: rgb(30, 20, 28);
+    font: inherit;
+    color: rgb(241, 184, 203);
+}
+
+button{
+    background-color: rgb(171, 140, 165);
+    font: inherit;
+    color: rgb(40, 5, 16);
+}

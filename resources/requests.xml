@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commRequests>
+    <request>
+    <name>Bruce Wane</name>
+    <email>bruce@batman.com</email>
+    <phone>777-747-7890</phone>
+    <type>Character Design</type>
+    <budget>500</budget>
+    <deadline>2024-08-31</deadline>
+    <style>Soft pen style</style>
+</request>
+
+<request>
+    <name>Link</name>
+    <email>zelda@link.com</email>
+    <phone>987-654-3210</phone>
+    <type>Illustration</type>
+    <budget>800</budget>
+    <deadline>2024-09-15</deadline>
+    <style>Sharp style</style>
+</request>
+
+<request>
+    <name>Frank Iero</name>
+    <email>pansy@mcr.com</email>
+    <phone>456-789-0123</phone>
+    <type>Halfbody</type>
+    <budget>300</budget>
+    <deadline>2024-07-20</deadline>
+    <style>Chibi</style>
+</request>
+</commRequests>

@@ -1,0 +1,89 @@
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+}
+  
+  
+  body {
+    min-height: 100vh;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #3c1b30;
+    font-size: 150%;
+  }
+  
+  
+  div {
+    margin: 12px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+  }  
+  
+  textarea {
+    resize: none;
+    margin-top: 10px;
+  }
+    
+#form{
+    grid-column: 1;
+}
+
+#ryu2{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:dashed;
+    border-color: aliceblue;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#submit {
+    margin: 10 px;
+    padding: 10px 20px;
+    border: 2px solid rgb(192, 68, 126);
+    border-radius: 5px;
+    color: rgb(241, 184, 203);
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    margin: 10 px;
+    padding: 10px 20px;
+    border: 2px solid rgb(192, 68, 126);
+    border-radius: 5px;
+    color: rgb(241, 184, 203);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(192, 68, 126);
+    color: white;
+}
+
+#submit:hover{
+    background-color: rgb(192, 68, 126);
+    color: white;
+}

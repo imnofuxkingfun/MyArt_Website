@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Commission Form</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <script type="text/javascript" src="form.js"></script>
+</head>
+<body>
+    <h3>Artist Commission Form</h3>
+    <div class="container">
+        <form id="form" target="_self" method="post" action="submit-commission">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required minlength="3" maxlength="30" size="20" placeholder="Ex: Van Gogh">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required size="22" placeholder="your.mom@example.com">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Artwork Details</legend>
+                <div>
+                    <label for="artworkType">Type of Artwork:</label>
+                    <select id="artworkType" name="artworkType" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="icon">Icon</option>
+                        <option value="halfbody">Halfbody</option>
+                        <option value="fullbody">Fullbody</option>
+                        <option value="characterDesign">Character Design</option>
+                        <option value="illustration">Illustration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="5" cols="38" required placeholder="Describe your commission request"></textarea>
+                </div>
+                <div>
+                    <label for="reference">Reference Images:</label>
+                    <input type="file" id="reference" name="reference" accept="image/*" multiple>
+                </div>
+                <div>
+                    <label for="budget">Budget (EUR):</label>
+                    <input type="number" id="budget" name="budget" min="5" required placeholder="Your budget for the artwork">
+                </div>
+                <div>
+                    <label for="deadline">Deadline:</label>
+                    <input type="date" id="deadline" name="deadline">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <div>
+                    <label for="style">Preferred Style:</label>
+                    <select id="style" name="style" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="sharpStyle">Sharp style</option>
+                        <option value="Chibi">Chibi</option>
+                        <option value="softStyle">Soft pen style</option>
+                        <option value="semiRealistic">semiRealistic</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="colorScheme">Color Scheme:</label>
+                    <input type="color" id="colorScheme" name="colorScheme">
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="38" placeholder="Any additional information or requests"></textarea>
+                </div>
+            </fieldset>
+            <br>
+            <div class="buttons">
+                <input id="submit" type="submit" value="Submit request">
+                <nav><a href="../index.html">Homepage</a></nav>
+            </div>
+        </form>
+        <div id="ryu2">
+            <img src="images/ryu2.png" height="800">
+        </div>
+    </div>
+    <div class="buttons">
+        <nav><a href="login.html">See submited requests</a></nav>
+    </div>
+</body>
+</html>

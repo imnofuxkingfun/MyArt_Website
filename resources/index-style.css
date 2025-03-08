@@ -1,0 +1,90 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* To prevent horizontal scroll */
+    background-color: rgb(67, 47, 62);
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;;
+}
+
+.container2 {
+    text-align: center;
+    border-bottom: 50px;
+}
+
+#animated-title {
+    color: rgb(241, 184, 203);
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    font-size: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid rgb(192, 68, 126);
+    border-radius: 5px;
+    color: rgb(241, 184, 203);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(192, 68, 126);
+    color: white;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.intro{
+    text-align: center;
+    color:rgb(192, 68, 126);
+}
+
+@media(min-width:20em)
+{
+    img{
+        margin-top: 20px;
+    }
+    .intro{
+        font-size: small;
+    }
+}
+
+@media(min-width:80em){
+    img{
+        margin-top: 50px;
+    }
+    .intro{
+        font-size:large;
+    }
+}
+
+#mess{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
