@@ -1,5 +1,5 @@
 # My Art Gallery. Hy!
-This simple website is a personal art portfolio website that showcases my digital artwork and offers commission fill-in forms for interested clients. Built with HTML, CSS, JavaScript, and Node.js, this platform provides an interactive experience for art enjoyers and potential customers.
+This project is a personal art portfolio website that showcases my digital artwork and offers commission fill-in forms for interested clients. Built with HTML, CSS, JavaScript, and Node.js, this platform provides an interactive experience for art enjoyers and potential customers.
 
 ## Pages
 Home (index.html): Landing page featuring a paperdoll and multiple navigation links.
