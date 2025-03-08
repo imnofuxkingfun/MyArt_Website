@@ -39,16 +39,4 @@ Data Management: AJAX requests to load artwork data from JSON files
 Form Processing: Handle commission requests and inquiries
 Error Handling: Custom 404 page for invalid routes
 
-## Installation and Setup
 
-Clone the repository:
-Copygit clone https://github.com/imnofuxkingfun/MyArt_Website.git
-
-Install dependencies:
-Copycd MyArt_Website
-npm install
-
-Start the development server:
-Copynpm start
-
-Access the website at http://localhost:3000
